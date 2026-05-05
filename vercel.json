@@ -2,7 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "git": {
     "deploymentEnabled": {
-      "opennext": false
+      "opennext": false,
+      "cloudflare/*": false
     }
   }
 }
