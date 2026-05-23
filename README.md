@@ -32,8 +32,8 @@ https://fjtd.dev
 
 ### Infrastructure
 
-- Vercel (Hosting)
-- Cloudflare (DNS)
+- OpenNext
+- Cloudflare Workers
 
 ## File structure
 
