@@ -8,7 +8,7 @@ export default function Home() {
     <div className="max-w-4xl mx-auto py-12">
       <div className="flex gap-8">
         <div className="w-2/5 sticky top-0 self-start flex flex-col gap-8">
-          {/* h-full flex flex-col */}
+        {/* 右側レイアウト */}
           <div className="flex flex-col gap-4">
             <ProfileHeader />
             <Contacts />
@@ -16,7 +16,7 @@ export default function Home() {
           <Footer />
         </div>
         <div className="w-3/5">
-          {/* 左側カード */}
+          {/* 右側カード */}
           <ContentsCard />
         </div>
       </div>

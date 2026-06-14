@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className='flex flex-col gap-4'>
       <div className="flex items-end gap-4">
         <div>
           <a href="https://sites.google.com/view/happy-busy" target="_blank">
@@ -22,7 +22,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div>
+      <div className='flex flex-col gap-1'>
         <small>
           <p className="text-gray-600">&copy; 2026 fjtd</p>
         </small>

@@ -1,3 +1,5 @@
 export default function ContentsCard() {
-  return <img src="https://opengraph.githubassets.com/1/fjt-dev/nowplaying" alt="github" />;
+  return(
+    <h1>Coming Soon.</h1>
+  )
 }

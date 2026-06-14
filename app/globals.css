@@ -5,3 +5,7 @@
     background-color: #f3f4f6;
   }
 }
+
+@theme {
+  --font-sans: var(--font-m-plus-1);
+}

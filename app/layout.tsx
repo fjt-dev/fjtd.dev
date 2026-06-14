@@ -1,29 +1,26 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { M_PLUS_1 } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin']
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin']
+const mPlus1 = M_PLUS_1({
+  variable: '--font-m-plus-1',
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  preload: false
 });
 
 export const metadata: Metadata = {
   title: 'fjtd.dev | Portfolio',
-  description: 'Student | Aspiring Web Frontend Engineer',
+  description: 'New-Bee Frontend Engineer | Student',
   openGraph: {
     title: 'fjtd.dev',
-    description: 'Student | Aspiring Web Frontend Engineer',
+    description: 'New-Bee Frontend Engineer | Student',
     url: 'https://fjtd.dev',
     siteName: 'fjtd.dev'
   },
   twitter: {
     title: 'fjtd.dev',
-    description: 'Student | Aspiring Web Frontend Engineer',
+    description: 'New-Bee Frontend Engineer | Student',
     creator: '@fjtd_dev'
   }
 };
@@ -35,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${mPlus1.variable} antialiased`}>{children}</body>
     </html>
   );
 }
