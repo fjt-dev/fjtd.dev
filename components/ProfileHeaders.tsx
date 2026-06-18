@@ -9,7 +9,7 @@ export default function ProfileHeader() {
       <div className="flex flex-col gap-5">
         <h1 className="font-bold text-3xl">fjtd.dev</h1>
         <div className="flex flex-col gap-2">
-          <p>&#x1f6e0; New-Bee Frontend Engineer</p>
+          <p>&#x1f6e0; Aspiring infrastructure engineer</p>
           <p>&#x1f393; Student</p>
         </div>
       </div>

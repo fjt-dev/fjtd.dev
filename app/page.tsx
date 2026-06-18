@@ -5,19 +5,20 @@ import ContentsCard from '@/components/ContentsCard';
 
 export default function Home() {
   return (
-    <div className="max-w-4xl mx-auto py-12">
-      <div className="flex gap-8">
-        <div className="w-2/5 sticky top-0 self-start flex flex-col gap-8">
-        {/* 右側レイアウト */}
+    <div className="max-w-4xl mx-auto py-12 px-4">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="w-full md:w-2/5 md:sticky md:top-0 md:self-start flex flex-col gap-8">
+          {/* 左側レイアウト */}
           <div className="flex flex-col gap-4">
             <ProfileHeader />
             <Contacts />
           </div>
-          <Footer />
+          <Footer className="hidden md:block" />
         </div>
-        <div className="w-3/5">
+        <div className="w-full md:w-3/5">
           {/* 右側カード */}
           <ContentsCard />
+          <Footer className="md:hidden" />
         </div>
       </div>
     </div>

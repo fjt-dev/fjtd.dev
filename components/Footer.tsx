@@ -1,8 +1,8 @@
 import NextImage from 'next/image';
 
-export default function Footer() {
+export default function Footer({ className }: { className?: string }) {
   return (
-    <footer className='flex flex-col gap-4'>
+    <footer className={`flex flex-col gap-4 ${className ?? ''}`}>
       <div className="flex items-end gap-4">
         <div>
           <a href="https://sites.google.com/view/happy-busy" target="_blank">
@@ -17,11 +17,11 @@ export default function Footer() {
         </div>
         <div>
           <a href="https://counter.fjtd.dev" target="_blank">
-            <img src="https://counter.fjtd.dev/counter?asset=blue2-100" referrerPolicy="origin" className="w-24" />
+            <img src="https://counter.fjtd.dev/counter?asset=blue2-100" referrerPolicy="origin" className="h-24" />
           </a>
         </div>
       </div>
-      <div className='flex flex-col gap-1'>
+      <div className="flex flex-col gap-1">
         <small>
           <p className="text-gray-600">&copy; 2026 fjtd</p>
         </small>
