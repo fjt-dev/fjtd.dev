@@ -2,10 +2,6 @@ import type { Metadata } from 'next';
 import { M_PLUS_1 } from 'next/font/google';
 import './globals.css';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
-
 const mPlus1 = M_PLUS_1({
   variable: '--font-m-plus-1',
   subsets: ['latin'],
