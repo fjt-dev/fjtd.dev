@@ -2,7 +2,6 @@
 
 This is my portfolio website. <br />
 I will update it regularly. <br />
-**No AI was used in the creation of this website.**
 
 ## URL
 
@@ -26,4 +25,4 @@ https://fjtd.dev
 ### Infrastructure
 
 - OpenNext
-- Cloudflare Workers
+  - AWS (S3, CloudFront, Lambda, DynamoDB)

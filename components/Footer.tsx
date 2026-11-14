@@ -17,7 +17,13 @@ export default function Footer({ className }: { className?: string }) {
         </div>
         <div>
           <a href="https://counter.fjtd.dev" target="_blank">
-            <img src="https://counter.fjtd.dev/counter?asset=blue2-100" referrerPolicy="origin" className="h-24" />
+           {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://counter.fjtd.dev/counter?asset=blue2-100"
+              referrerPolicy="origin"
+              className="h-24"
+              alt='Access counter'
+            />
           </a>
         </div>
       </div>
