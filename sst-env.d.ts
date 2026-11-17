@@ -6,6 +6,10 @@
 
 declare module "sst" {
   export interface Resource {
+    "Portfolio": {
+      "type": "sst.aws.Nextjs"
+      "url": string
+    }
   }
 }
 

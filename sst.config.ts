@@ -15,12 +15,21 @@ export default $config({
   async run() {
     new sst.aws.Nextjs('Portfolio', {
       openNextVersion: '4.1.5',
+      transform: {
+        cdn: {
+          transform: {
+            distribution: (args) => {
+              args.priceClass = 'PriceClass_200';
+            }
+          }
+        }
+      },
       domain:
         $app.stage === 'production'
           ? {
               name: 'fjtd.dev',
               redirects: ['www.fjtd.dev'],
-              dns: sst.cloudflare.dns()
+              dns: sst.cloudflare.dns({ proxy: true })
             }
           : undefined
     });
